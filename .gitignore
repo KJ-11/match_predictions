@@ -1,0 +1,12 @@
+# Virtualenvs. A venv was committed to this repo's history once already,
+# which is why the clone is larger than the source warrants.
+venv/
+env/
+.venv/
+pyvenv.cfg
+**/site-packages/
+
+__pycache__/
+*.pyc
+.DS_Store
+.env

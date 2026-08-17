@@ -42,6 +42,7 @@ def make_predictions(data, predictors):
 
 # Make predictions
 combined, precision = make_predictions(matches_rolling, predictors + new_cols)
+print(f"Precision on held-out matches (2023-06-06 onwards): {precision:.3f}")
 
 combined = combined.merge(matches_rolling[["date", "team", "opponent", "result"]], left_index=True, right_index=True)
 
